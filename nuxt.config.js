@@ -1,3 +1,5 @@
+import apolloFetch from './apollo/apollo-fetch';
+
 export default {
     // Target (https://go.nuxtjs.dev/config-target)
     target: 'static',
@@ -42,10 +44,12 @@ export default {
 
     // Build static routes
     generate: {
-        routes: [
-            '/home',
-            '/dit-is-een-test',
-        ],
+        routes: function () {
+            return apolloFetch({query: 'query { allPages { slug }}'})
+                .then((result) => {
+                    return result.data.allPages.map((page) => page.slug);
+                });
+        },
     },
 
     // Build Configuration (https://go.nuxtjs.dev/config-build)
