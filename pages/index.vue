@@ -5,7 +5,10 @@
                 demo
             </h1>
             <div class="links" v-for="page in allPages" :key="page.slug">
-                <a :href="page.slug">{{ page.title }} [{{ page.displayType }}]</a>
+                <a :href="page.slug">
+                    <img v-if="page.image" :src="page.image.url" :alt="page.image.alt">
+                    {{ page.title }} [{{ page.displayType }}]
+                </a>
             </div>
         </div>
     </div>
@@ -23,6 +26,10 @@ export default {
                     displayType
                     slug
                     title
+                    image {
+                        url(imgixParams:{w: 100, h: 50, fit:facearea})
+                        alt
+                    }
                 }
             }`,
         },
