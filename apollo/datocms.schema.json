@@ -1,0 +1,551 @@
+{
+    "data": {
+        "__schema": {
+            "types": [
+                {
+                    "name": "Boolean",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "String",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "Query",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "PageRecord",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "DateTime",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ItemId",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "Tag",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "MetaTagAttributes",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "SiteLocale",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ItemStatus",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "BooleanType",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "PageModelContentField",
+                    "kind": "UNION",
+                    "possibleTypes": [
+                        {
+                            "name": "TextRecord",
+                            "description": "Record of type Text (text)"
+                        },
+                        {
+                            "name": "ImageRecord",
+                            "description": "Record of type Image (image)"
+                        },
+                        {
+                            "name": "ReferenceRecord",
+                            "description": "Record of type Reference (reference)"
+                        }
+                    ]
+                },
+                {
+                    "name": "TextRecord",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImageRecord",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "FileField",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadId",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "IntType",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ColorField",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "CustomData",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "focalPoint",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "FloatType",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParams",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsAuto",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsBlendAlign",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsBlendCrop",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsBlendFit",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsBlendMode",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsBlendSize",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsCh",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsCrop",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsCs",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsFill",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsFit",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsFlip",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsFm",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsMarkAlign",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsMarkFit",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsPalette",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsTransparency",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsTrim",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsTxtAlign",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsTxtClip",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ImgixParamsTxtFit",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ResponsiveImage",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadVideoField",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "Int",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "MuxThumbnailFormatType",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "VideoMp4Res",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "Float",
+                    "kind": "SCALAR",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ReferenceRecord",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ContentRecord",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "StringMultiLocaleField",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "PageModelFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "CreatedAtFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ItemIdFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "PublishedAtFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "StatusFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UpdatedAtFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "BooleanFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "StringFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "StringMatchesFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "SlugFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "TextFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "PageModelOrderBy",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "CollectionMetadata",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ContentModelFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ContentModelOrderBy",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "Site",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "FaviconType",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "GlobalSeoField",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "SeoField",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "TypeFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadType",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "InUseFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ResolutionFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ResolutionType",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadSizeFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadTagsFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadColorsFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "ColorBucketType",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "OrientationFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadOrientation",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadIdFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadMimeTypeFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadFormatFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadHeightFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadWidthFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadAltFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadTitleFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadNotesFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadAuthorFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadCopyrightFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadBasenameFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadFilenameFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadCreatedAtFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadUpdatedAtFilter",
+                    "kind": "INPUT_OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "UploadOrderBy",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "__Schema",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "__Type",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "__Field",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "__Directive",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "__EnumValue",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "__InputValue",
+                    "kind": "OBJECT",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "__TypeKind",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                },
+                {
+                    "name": "__DirectiveLocation",
+                    "kind": "ENUM",
+                    "possibleTypes": null
+                }
+            ]
+        }
+    }
+}
