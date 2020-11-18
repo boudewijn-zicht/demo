@@ -40,6 +40,14 @@ export default {
     // Apollo module configuration
     apollo: {clientConfigs: {default: '~/apollo/config.js'}},
 
+    // Build static routes
+    generate: {
+        routes: [
+            '/home',
+            '/dit-is-een-test',
+        ],
+    },
+
     // Build Configuration (https://go.nuxtjs.dev/config-build)
     build: {}
 }
